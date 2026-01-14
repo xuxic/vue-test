@@ -1,41 +1,41 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Products from '../views/Products.vue'
-import Contact from '../views/Contact.vue'
-import Blank from '../views/Blank.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import Home from "../views/Home.vue";
+import About from "../views/About.vue";
+import Products from "../views/Products.vue";
+import Contact from "../views/Contact.vue";
+import Blank from "../views/Blank.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
   },
   {
-    path: '/about',
-    name: 'About',
-    component: About
+    path: "/about",
+    name: "About",
+    component: About,
   },
   {
-    path: '/products',
-    name: 'Products',
-    component: Products
+    path: "/products",
+    name: "Products",
+    component: Products,
   },
   {
-    path: '/contact',
-    name: 'Contact',
-    component: Contact
+    path: "/contact",
+    name: "Contact",
+    component: Contact,
   },
   {
-    path: '/blank',
-    name: 'Blank',
-    component: Blank
-  }
-]
+    path: "/blank",
+    name: "Blank",
+    component: Blank,
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

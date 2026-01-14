@@ -3,12 +3,13 @@
     <div class="blank-content">
       <h1 class="text-center text-muted">空白页</h1>
       <p class="text-center text-muted">这是一个空白页面</p>
-      <router-link to="/contact">联系我们</router-link>
     </div>
+    <Counter />
   </div>
 </template>
 
 <script setup>
+import Counter from '../components/Counter.vue'
 </script>
 
 <style scoped>

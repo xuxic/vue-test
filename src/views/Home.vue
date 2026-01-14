@@ -35,11 +35,13 @@
         </div>
       </div>
     </div>
+    <Counter />
   </div>
 </template>
 
 <script setup>
 import { useRouter } from 'vue-router'
+import Counter from '../components/Counter.vue'
 
 const router = useRouter()
 

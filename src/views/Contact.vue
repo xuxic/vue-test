@@ -32,48 +32,76 @@
             <form @submit.prevent="handleSubmit">
               <div class="mb-3">
                 <label for="name" class="form-label">姓名</label>
-                <input type="text" class="form-control" id="name" v-model="formData.name" required>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  v-model="formData.name"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">邮箱</label>
-                <input type="email" class="form-control" id="email" v-model="formData.email" required>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  v-model="formData.email"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="subject" class="form-label">主题</label>
-                <input type="text" class="form-control" id="subject" v-model="formData.subject" required>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  v-model="formData.subject"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">留言内容</label>
-                <textarea class="form-control" id="message" v-model="formData.message" rows="5" required></textarea>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  v-model="formData.message"
+                  rows="5"
+                  required
+                ></textarea>
               </div>
-              <button type="submit" class="submit-button btn btn-primary w-100">发送留言</button>
+              <button type="submit" class="submit-button btn btn-primary w-100">
+                发送留言
+              </button>
             </form>
           </div>
         </div>
       </div>
     </div>
+    <Counter />
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
+import Counter from "../components/Counter.vue";
 
 const formData = ref({
-  name: '',
-  email: '',
-  subject: '',
-  message: ''
-})
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+});
 
 const handleSubmit = () => {
-  alert('感谢您的留言！我们会尽快与您联系。')
+  alert("感谢您的留言！我们会尽快与您联系。");
   formData.value = {
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  }
-}
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  };
+};
 </script>
 
 <style scoped>

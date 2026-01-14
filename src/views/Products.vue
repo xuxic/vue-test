@@ -14,11 +14,13 @@
         </div>
       </div>
     </div>
+    <Counter />
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import Counter from '../components/Counter.vue'
 
 const products = ref([
   {
