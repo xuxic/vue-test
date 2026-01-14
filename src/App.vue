@@ -20,6 +20,9 @@
             <li class="nav-item">
               <router-link class="nav-link" to="/contact">联系我们</router-link>
             </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/blank">空白页</router-link>
+            </li>
           </ul>
         </div>
       </div>
