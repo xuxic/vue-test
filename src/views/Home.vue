@@ -35,7 +35,7 @@
         </div>
       </div>
     </div>
-    <Counter />
+    <Counter father="Home页面" />
   </div>
 </template>
 

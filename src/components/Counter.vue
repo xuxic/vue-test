@@ -5,23 +5,31 @@
       <span class="counter-value">{{ count }}</span>
       <button @click="increment" class="btn btn-outline-primary">+</button>
     </div>
+    <p class="counter-value">当前页面：{{ father }}</p>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const count = ref(0)
+const props = defineProps({
+  father: {
+    type: String,
+    default: "",
+  },
+});
+
+const count = ref(0);
 
 const increment = () => {
-  count.value++
-}
+  count.value++;
+};
 
 const decrement = () => {
   if (count.value > 0) {
-    count.value--
+    count.value--;
   }
-}
+};
 </script>
 
 <style scoped>

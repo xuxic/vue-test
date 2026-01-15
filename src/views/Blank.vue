@@ -3,7 +3,7 @@
     <div class="blank-content">
       <h1 class="text-center text-muted">空白页</h1>
       <p class="text-center text-muted">这是一个空白页面</p>
-      <Counter />
+      <Counter father="Blank页面" />
       <button v-on:click="showMessage = !showMessage">显示/隐藏</button>
       <p v-show="showMessage">Hello Vue!</p>
     </div>

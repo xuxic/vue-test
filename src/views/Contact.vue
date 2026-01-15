@@ -78,7 +78,7 @@
         </div>
       </div>
     </div>
-    <Counter />
+    <Counter father="Contact页面" />
   </div>
 </template>
 
